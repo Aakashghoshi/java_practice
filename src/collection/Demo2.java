@@ -57,6 +57,7 @@ public class Demo2 {
         System.out.println(Arrays.toString(arr));
 
         String[] strarr = {"Aakash", "singh", "ghooshi", "raj"};
+        Map<String,Long> map1 = Arrays.stream(strarr).sorted(Comparator.comparing(String::length)).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
 
         Arrays.sort(strarr, (str1, str2) -> str1.length() - str2.length());
 
