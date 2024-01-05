@@ -56,6 +56,9 @@ public class Demo2 {
 // prints output
         System.out.println(Arrays.toString(arr));
 
+        List<Integer> li = Arrays.asList(1,3,4,5,6,7,8,9);
+        li.stream().filter(s -> s%2==0).collect(Collectors.toList()).forEach(System.out::println);
+
         String[] strarr = {"Aakash", "singh", "ghooshi", "raj"};
         Map<String,Long> map1 = Arrays.stream(strarr).sorted(Comparator.comparing(String::length)).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
 
