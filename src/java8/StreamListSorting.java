@@ -3,7 +3,6 @@ package java8;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class StreamListSorting {
     public static void main(String[] args) {
@@ -46,6 +45,15 @@ public class StreamListSorting {
         Map<String, Long> mapofstring = listOfStr.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 
         System.out.println(mapofstring);
+
+        String str2 = "Aakash Singh";
+        char[] ch3 = str2.toCharArray();
+        int count =0;
+        for(char ch : ch3){
+            System.out.println(ch);
+            count++;
+        }
+        System.out.println(count);
 
 
         Map<Integer, Long> assas = list.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
