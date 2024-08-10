@@ -12,6 +12,7 @@ public class Demo2 {
         int val = list.stream().min((s1,s2) -> s1.compareTo(s2)).get();
 
         System.out.println("chandu"+val);
+        System.out.println("chandu"+val);
 
         Optional<Integer> val2 = list.stream().sorted(Comparator.comparing(Integer::intValue).reversed()).skip(1).findFirst();
         System.out.println(val2.get());

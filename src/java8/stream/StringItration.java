@@ -8,7 +8,6 @@ public class StringItration {
         List<String> strings = Arrays.asList("Hello","Interview","Questions","Answers");
         System.out.println(strings.stream()
                 .count()
-
         );
     }
 }
